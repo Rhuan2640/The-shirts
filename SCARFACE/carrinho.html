@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Carrinho | SCARFACE</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body><div id="header"></div>
+<main class="wrap">
+<h1 class="titulo">Carrinho de Compras</h1>
+<div class="cart-head"><span>Produto</span><span>Quantidade</span><span>Preço</span><span>Subtotal</span></div>
+<div id="cartItems"></div>
+<div class="cart-foot">
+<div><h3>Meios de envio</h3><div class="cep-row"><input id="cep" placeholder="Seu CEP" maxlength="9"><button class="btn gray" id="calc">Calcular</button></div><p id="freteTxt" class="small">Frete grátis acima de R$ 500,00.</p></div>
+<div class="total-box"><p>Subtotal: <b id="sub">R$ 0,00</b></p><p>Frete: <b id="fr">R$ 0,00</b></p><p class="tot">Total: <b id="total">R$ 0,00</b></p><a class="btn red block" id="go" href="checkout.html">Iniciar Compra</a></div>
+</div>
+</main>
+<div id="footer"></div><script src="js/produtos.js"></script><script src="js/script.js"></script><script src="js/carrinho.js"></script><script src="js/login.js"></script></body></html>

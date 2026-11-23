@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout | SCARFACE</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body><div id="header"></div>
+<main class="wrap">
+<h1 class="titulo">Checkout</h1>
+<div class="checkout">
+<form id="coForm" novalidate>
+<h3>Dados do cliente</h3>
+<div class="f2"><input id="nome" placeholder="Nome completo" required><input id="email" type="email" placeholder="Email" required><input id="cpf" placeholder="CPF" required><input id="tel" placeholder="Telefone" required></div>
+<h3>Endereço</h3>
+<div class="f2"><input id="cepc" placeholder="CEP" maxlength="9" required><input id="rua" placeholder="Rua" required><input id="num" placeholder="Número" required><input id="comp" placeholder="Complemento"><input id="cidade" placeholder="Cidade" required><input id="uf" placeholder="Estado (UF)" maxlength="2" required></div>
+<h3>Forma de pagamento</h3>
+<div class="pay"><label><input type="radio" name="pg" value="pix" checked> PIX</label><label><input type="radio" name="pg" value="cartao"> Cartão</label><label><input type="radio" name="pg" value="boleto"> Boleto</label></div>
+<p id="payInfo" class="small"></p>
+<p class="erro" id="coErro"></p>
+</form>
+<aside class="resumo"><h3>Resumo da compra</h3><div id="resumo"></div>
+<p>Subtotal <b id="sub"></b></p><p>Frete <b id="fr"></b></p><p class="tot">Total <b id="total"></b></p>
+<button class="btn red block" id="finalizar">FINALIZAR COMPRA</button><p class="small">Demonstração: nenhum pagamento real é processado.</p></aside>
+</div>
+</main>
+<div id="footer"></div><script src="js/produtos.js"></script><script src="js/script.js"></script><script src="js/carrinho.js"></script><script src="js/login.js"></script></body></html>
